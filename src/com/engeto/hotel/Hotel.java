@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * Hotel application for booking rooms.
  *
  * @author Miloslav Matulka
- * @version v1.0
+ * @version v1.1
  */
 public class Hotel {
     /**
@@ -49,7 +49,7 @@ public class Hotel {
         // Automatic check in and check out
         Booking booking3 = new Booking(room2, guest2, Booking.Type.PRACOVNÍ);
 
-        History listOfBookings = new History();
+        BookingsHistory listOfBookings = new BookingsHistory();
         listOfBookings.addBooking(booking1);
         listOfBookings.addBooking(booking2);
         listOfBookings.addBooking(booking3);
